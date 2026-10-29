@@ -1,0 +1,24 @@
+{
+  "name": "medtrace",
+  "version": "0.1.0",
+  "description": "MedTrace: blockchain-based provenance for pharmaceutical supply chains (CSE 540, Team BlockRx)",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:amoy": "hardhat run scripts/deploy.js --network amoy",
+    "seed:local": "hardhat run scripts/seedDemo.js --network localhost",
+    "iot:simulate": "node offchain/iot-simulator/simulateSensor.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.0",
+    "hardhat": "^2.22.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}
