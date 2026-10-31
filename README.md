@@ -176,11 +176,11 @@ Every member owns a blockchain development task. Commit history in each area is 
 
 | Member | Development task | Owns |
 |---|---|---|
-| Shrey Bishnoi | Access control, regulator module, Amoy deployment | `contracts/access/`, regulator functions, `scripts/deploy.js` |
-| Maulik Jadav | Core batch and custody logic | `contracts/MedTrace.sol` |
-| Neric Joel | Contract testing and gas analysis | `test/` |
-| Vaibhav Abhiramacheri | Web3 front end (Ethers.js, MetaMask) | `frontend/` |
-| Rohan Chandrashekar | IPFS and IoT simulator integration | `offchain/` |
+| Shrey Bishnoi | Web3 front-end app: MetaMask connection, Ethers.js contract wiring, role-based pages (manufacturer, distributor, pharmacy, regulator) | `frontend/` (app shell and role pages) |
+| Vaibhav Abhiramacheri | Access control and regulator module, plus the patient "verify batch" page with live event listeners | `contracts/access/`, `certifyBatch` / `recallBatch`, `frontend/src/pages/Verify*` |
+| Maulik Jadav | Core batch and custody logic, plus the open contract TODOs (lot-number lookup, `getHistory` pagination, dispense policy on temperature breach) | `contracts/MedTrace.sol` |
+| Neric Joel | Contract tests, edge cases and gas report, plus Amoy deployment and explorer verification | `test/`, `scripts/deploy.js`, Amoy address in README |
+| Rohan Chandrashekar | IPFS uploads (real CIDs on-chain) and the IoT simulator alert flow | `offchain/` |
 
 **Workflow:** feature branches and pull requests, with at least one teammate reviewing each PR before merge. Tasks are tracked on the GitHub Projects board.
 
