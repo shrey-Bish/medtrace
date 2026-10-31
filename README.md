@@ -172,13 +172,15 @@ BATCH_ID=1 npm run iot:simulate
 
 ## 10. Team and Ownership
 
-| Member | Role | Owns |
+Every member owns a blockchain development task. Commit history in each area is the record of who built what.
+
+| Member | Development task | Owns |
 |---|---|---|
-| Shrey Bishnoi | Project Manager, Team Submitter | Coordination, task board, final report |
-| Maulik Jadav | Smart Contract Lead | `contracts/` |
-| Neric Joel | Testing and Deployment Lead | `test/`, `scripts/`, Amoy deployment |
-| Vaibhav Abhiramacheri | Front-End Developer | `frontend/` |
-| Rohan Chandrashekar | Off-Chain Integration and Documentation Lead | `offchain/`, README |
+| Shrey Bishnoi | Access control, regulator module, Amoy deployment | `contracts/access/`, regulator functions, `scripts/deploy.js` |
+| Maulik Jadav | Core batch and custody logic | `contracts/MedTrace.sol` |
+| Neric Joel | Contract testing and gas analysis | `test/` |
+| Vaibhav Abhiramacheri | Web3 front end (Ethers.js, MetaMask) | `frontend/` |
+| Rohan Chandrashekar | IPFS and IoT simulator integration | `offchain/` |
 
 **Workflow:** feature branches and pull requests, with at least one teammate reviewing each PR before merge. Tasks are tracked on the GitHub Projects board.
 
