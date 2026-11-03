@@ -1,3 +1,5 @@
+> **This repository has moved.** Active development continues at **https://github.com/abhiramacheri-vaibhav/MedTrace**. This copy is archived and read-only.
+
 # MedTrace: Blockchain-Based Provenance for Pharmaceutical Supply Chains
 
 **CSE 540: Engineering Blockchain Applications (Fall B 2026), Project 1**
